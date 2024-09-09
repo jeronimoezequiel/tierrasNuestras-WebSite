@@ -1,0 +1,26 @@
+/*=============== VARIABLES ===============*/
+@import './utilities/vars.scss';
+
+/*=============== MEDIAS QUERYS ===========*/
+@import './utilities/mediaQuerys.scss';
+
+/*=============== RESET ===================*/
+@import './utilities/reset.scss';
+
+/*=============== INDEX ===================*/
+@import './sectionscss/index.scss';
+
+/*=============== PRODUCTOS ===============*/
+@import './sectionscss/02-todosLosProductos.scss';
+
+/*=============== DONDE COMPRAR ===========*/
+@import './sectionscss/03-dondeComprar.scss';
+
+/*=============== QUIENES SOMOS ===========*/
+@import './sectionscss/04-quienes-somos.scss';
+
+/*=============== PREGUNTAS FRECUENTES ===========*/
+@import './sectionscss/05-faqs.scss';
+
+/*=============== CONTACTO ===========*/
+@import './sectionscss/06-contacto.scss';

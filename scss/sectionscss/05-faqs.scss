@@ -1,0 +1,194 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    margin-top: 0%;
+    border-radius: 30px;
+    padding: 30px;
+
+    @include small-devices {
+        margin-top: 25%;
+    }
+
+    @include movil-s {
+        margin-top: 15%;
+    }
+
+    @include movil-s-m {
+        margin-top: 12%;
+    }
+
+    @include medium-devices-maxwidth {
+        margin-top: 12%;
+    }
+
+    @include medium-devices {
+        margin-top: 10%;
+    }
+
+    @include large-device {
+        margin-top: 0;
+    }
+
+    .faq__container {
+        background: #fff;
+        width: 1080px;
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 15px;
+        border: 1px solid #bebebe;
+
+        @include small-devices {
+            max-width: 100%;
+            padding: 1rem 1rem;
+        }
+
+        @include movil-s {
+            max-width: 100%;
+            padding: 1rem 1rem;
+        }
+
+        @include movil-s-m {
+            max-width: 100%;
+            padding: 1rem 1rem;
+        }
+
+        @include medium-devices-maxwidth {
+            max-width: 100%;
+            padding: 1rem 1rem;
+        }
+
+        @include medium-devices {
+            max-width: 100%;
+            padding: 1rem 1rem;
+        }
+
+        @include tablet {
+            width: 750px;
+        }
+
+        .faq__heading {
+            display: flex;
+            gap: 20px;
+            text-align: center;
+
+            h1 {
+                font-weight: bold;
+                font-size: 2.5rem;
+                margin: 0 -2%;
+                color: #111111;
+
+                @include small-devices {
+                    font-size: 1.3rem;
+                }
+
+                @include movil-s {
+                    font-size: 1.3rem;
+                }
+                
+                @include movil-s-m {
+                    font-size: 1.8rem;
+                }
+
+                @include medium-devices {
+                    font-size: 2rem;
+                }
+            }
+
+            i {
+                color: #f44336;
+                font-size: 34px;
+
+                @include small-devices {
+                    font-size: 1.3rem;
+                }
+
+                @include movil-s {
+                    font-size: 1.3rem;
+                }
+
+                @include movil-s-m {
+                    font-size: 1.8rem;
+                }
+
+                @include medium-devices {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+
+                @include small-devices {
+                    font-size: .9rem;
+                }
+
+                @include movil-s {
+                    font-size: .9rem;
+                    max-width: 86%;
+                }
+
+                @include movil-s-m {
+                    font-size: 1.25rem;
+                    max-width: 80%;
+                }
+
+                @include medium-devices {
+                    font-size: 1.4rem;
+                }
+
+                
+            }
+
+            img {
+                cursor: pointer;
+            }
+
+            i {
+                color: #f44336;
+                font-size: 27px;
+                cursor: pointer;
+
+                @include small-devices {
+                    font-size: 1.3rem;
+                }
+
+                @include movil-s {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        p {
+            color: #5f5f5f;
+            font-size: 16px;
+            letter-spacing: 1px;
+
+            @include small-devices {
+                font-size: .9rem;
+            }
+
+            @include movil-s {
+                font-size: .9rem;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        hr {
+            border: 1px solid #d3d3d3;
+        }
+    }
+}

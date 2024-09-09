@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../recursos/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!--=============== Bootstrap ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Productos</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="app__header" id="app-header">
+        <nav class="app__nav app__container">
+            <a href="../index.html" class="app__nav__logo">
+                <img src="../recursos/img/logo-nuevo-sin-fondo.png" alt="">
+                <!-- <i class="ri-building-2-line"></i> -->
+                <!-- <span>TierrasNuestras</span> -->
+            </a>
+    
+            <div class="app__nav__menu active-link" id="nav-menu">
+                <ul class="app__nav__list">
+                    <li>
+                        <a href="../index.html" class="app__nav__link">Home</a>
+                    </li>
+    
+                    <li class="dropdown">
+                        <a href="../pages/02-todosLosProductos.html" class="app__nav__link">
+                            Productos <i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <p>Categorías</p>
+                            <li><a href="../02b-aguaDePiedra.html">Agua de Piedra</a></li>
+                            <li><a href="../02c-microsolarium.html">Microsolarium</a></li>
+                            <li><a href="../02d-microcemento.html">Microcemento</a></li>
+                            <li><a href="../02e-base.html">Base Niveladora</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="../pages/03-dondeComprar.html" class="app__nav__link">Donde Comprar</a>
+                    </li>
+    
+                    <li>
+                        <a href="../pages/04-quienesSomos.html" class="app__nav__link">Quienes Somos</a>
+                    </li>
+    
+                    <li>
+                        <a href="../pages/05-FAQs.html" class="app__nav__link">FAQ'S</a>
+                    </li>
+    
+                    <!-- Ajuste aquí -->
+                    <li class="dropdown">
+                        <a href="../pages/06-contact.html" class="app__nav__link">
+                            <span id="dropdown__menu">Contactanos</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <p>Hacenos tu consulta</p>
+                            <li><a href="../pages/contact.html">Email</a></li>
+                            <li><a href="#">Otros Canales</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <!-- Close button  -->
+                <div class="app__nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+    
+            <!-- Toggle menu -->
+            <div class="app__nav__toggle" id="nav-toggle">
+                <i class="ri-apps-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        
+        <!--=============== ABOVE THE FOLD ===============-->
+        <section class="black__section" id="main__shop-section">
+
+            <div class="main__text">
+                <span>UBICACIÓN//</span>
+                <h1><font>Nos encontramos ubicados </font> al noroeste de la Ciudad Autónoma de Buenos Aires</h1>
+                <p>Podés llegar fácil en auto desde la General Paz, en colectivo con varias líneas cercanas, o en tren bajando en la estación San Martín. ¡Te esperamos!</p>
+                <a href="https://www.google.com.ar/maps/place/Bartolom%C3%A9+Mitre+2444,+B1650+Villa+Maip%C3%BA,+Provincia+de+Buenos+Aires/@-34.5677277,-58.5299804,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb71247b89dd5:0x74c1254ff4ed172e!8m2!3d-34.5677321!4d-58.5274055!16s%2Fg%2F11c88klj0p?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ir a Google Maps</a>
+            </div>
+
+            <div class="main__img">
+                <img src="../recursos/about-img-1.jpg" alt="">
+            </div>
+
+        </section>
+
+        <!--=============== google maps ===============-->
+        <section id="sidebar__map">
+
+            <div class="sidebar-heading">
+                <h3>¡Estamos aca!</h3>
+            </div>
+
+            <div class="sidebar__container">
+    
+                <div class="sidebar__sidebar">
+                    <h1>Tierras Nuestras Srl.</h1>
+                    <ul>
+                        <li><span>Dirección:</span> Mitre 2444, Villa Maipu, Gral San Martín, Buenos Aires.</li>
+                        <li><span>Teléfono:</span> +54 9 11 6022 -0888</li>
+                        <li><span>Horario de atención:</span> Lun a Vier. - 9.15 AM  a 15.30 PM</li>
+                        <li><a href="../pages/contact.html" class="hero-btn">Contactanos</a></li>
+                    </ul>
+                </div>
+
+                <section class="location">
+                    <div id="map" style="width: 840px; height: 450px;"></div> 
+                </section>
+                
+            </div>
+        </section>
+
+        <!--=============== BANNER ===============-->
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__container-text">
+                    <!-- Forma #1 -->
+                    <h2 class="titulo">Encontra el revestimiento perfecto!</h2>    
+                    <p>Explorá nuestra selección de productos y descubrí el producto perfecto para tu hogar o espacio comercial.</p>
+        
+                    <a href="" class="hero-btn">Visita nuestras obras</a>
+                    <a href="" class="hero-btn contact-btn">Inspirate con Tierras Nuestras</a>
+                </div>    
+            </div>
+        </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="../index.html" class="footer__logo">
+                    <!-- <i class="ri-building-2-line"></i>  -->
+                    <span>TierrasNuestras Srl.</span>
+                </a>
+
+                <p class="footer__description">
+                    Tu destino ideal para recubrimientos <br> de construcción unicos y robustos.
+                </p>
+
+                <addres class="footer__email">
+                    Mitre 2444, Villa Maipú. Gral San Martín <br>
+                    Lun a Vier. - 9.15 AM a 15.30 PM
+                </addres>
+            </div>
+
+            <div class="footer__content grid">
+
+                <div>
+                    <h3 class="footer__title">Nuestra Empresa</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="../pages/04-quienesSomos.html" class="footer__link">Quienes Somos</a>
+                        </li>
+
+                        <li>
+                            <a href="../pages/02-todosLosProductos.html" class="footer__link">Productos</a>
+                        </li>
+
+                        <li>
+                            <a href="../pages/06-contact.html" class="footer__link">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Ayuda & Soporte</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="../pages/05-FAQs.html" class="footer__link">FAQ's</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Terminos & Condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Redes Sociales</h3>
+
+                    <div class="footer__social">
+
+                        <a href="https://wa.me/+5491160220888" target="_blank" class="footer__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+
+                        <a class="footer__social-link" href="https://www.instagram.com/tierrasnuestras.revestimientos?igsh=MTBoZTBrNmlyMGhzYw==" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a class="footer__social-link" href="mailto:obras.tierrasnuestras@gmail.com" target="_blank">
+                            <i class="ri-mail-line"></i>
+                        </a>
+
+                        <a class="footer__social-link" href="https://www.youtube.com/@tierrasnuestrasrevestimien4845" target="_blank">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; Todos Los Derechos Reservados By <a href="mailto:jeronimonunez2405@gmail.com">Jeronimo Nuñez</a> - AuralQ
+        </span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#main__shop-section" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <div class="fab-container">
+
+        <div class="fab fab-icon-holder">
+            <i class="ri-add-line"></i>
+        </div>
+    
+        <ul class="fab-options">
+            <li>
+                <a href="https://wa.me/+5491160220888" target="_blank">
+                    <span class="fab-label">Whatsapp</span>
+                    <div class="fab-icon-holder">
+                        <i class="ri-whatsapp-line"></i>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/tierrasnuestras.revestimientos?igsh=MTBoZTBrNmlyMGhzYw==" target="_blank">
+                    <span class="fab-label">Instagram</span>
+                    <div class="fab-icon-holder">
+                        <i class="ri-instagram-fill"></i>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:obras.tierrasnuestras@gmail.com" target="_blank">
+                    <span class="fab-label">Email</span>
+                    <div class="fab-icon-holder">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/@tierrasnuestrasrevestimien4845" target="_blank">
+                    <span class="fab-label">YouTube</span>
+                    <div class="fab-icon-holder">
+                        <i class="ri-youtube-line"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="../js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!--=============== Bootstrap ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!--=============== LEAFLET ===============-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../js/leaflet-map.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
