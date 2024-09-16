@@ -26,7 +26,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Contacto</title>
+    <title>Descubrinos!</title>
 </head>
 <body>
     <!--==================== HEADER ====================-->
@@ -124,83 +124,182 @@
 
     </header>
 
+    <section class="header" id="por-que-revestir" style="background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.041)), url('../recursos/imagenes/navbar-desktop/background-3.jpg');
+    background-size: cover;"></section>
+
     <!--==================== MAIN ====================-->
     <main class="main">
 
-        <section class="form">
-            <div class="contacto__container">
-                <span class="big__circle"></span>
-                <div class="contacto__form">
-                    <div class="contacto__info">
-                        <h3 class="contacto__title">Si te gusta lo que ves entonces <br> trabajemos juntos.</h3>
-                        <p class="contacto__text">
-                            Aportamos soluciones rápidas para facilitar la vida de nuestros clientes. 
-                            <br> 
-                            ¿Tenes alguna pregunta? ¡Estamos para ayudarte! <br> Completá este formulario de contacto y nos comunicaremos con usted lo antes posible.
-                        </p>
+        <!-- ABOVE THE FOLD -->
+        <div class="text-box-why">
+            <h1>Transforma tus proyectos con nuestros revestimientos</h1>
+            <p>ARTE + OFICIO</p>
+            <!-- <p>Explora cómo Nuestros Revestimientos pueden elevar tus construcciones, ofreciendo soluciones innovadoras y sostenibles que combinan calidad y estética. Conoce las ventajas de elegir productos que marcan la diferencia en cada detalle.</p> -->
+        </div>
 
-                        <div class="contacto__info-info">
+        <!-- Infobox -->
+        <div class="info-box">
+            <h1>Explorá los beneficios de elegir nuestros revestimientos</h1>
+            <div class="subtitles">
 
-                            <div class="information">
-                                <i class="ri-map-pin-line"></i>
-                                <p>Mitre 2444, Villa Maipú. Gral San Martín</p>
-                            </div>
+                <h6><i class="bi bi-arrow-down"></i><a href="#section_1"> Diseño <br> y versatilidad</a></h6>
+                <!-- <button class="info-box_btn">
 
-                            <div class="information">
-                                <i class="ri-mail-line"></i>
-                                <p>tierrasnuestras@gmail.com</p>
-                            </div>
+                    <span class="circle">
+                        <span class="arrow"></span>
+                    </span>
 
-                            <div class="information">
-                                <i class="ri-phone-line"></i>
-                                <p>+549 11 3344 3987</p>
-                            </div>
+                    <span class="info-box_text"></span>
 
+                </button>  -->
+                <h6><i class="bi bi-arrow-down"></i><a href="#section_2">Calidad <br> y confiabilidad</a></h6>
+                <h6><i class="bi bi-arrow-down"></i><a href="#section_3">Soluciones <br> creativas</a></h6>
+                <h6><i class="bi bi-arrow-down"></i><a href="#section_4">Tu obra <br> 100% personalizada</a></h6>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <section class="section_1" id="section_1">
+
+            <div class="content_info">
+                <h2>Diseño + versatilidad</h2>
+                <p>Transformá tus ideas con soluciones creativas y personalizadas para cada proyecto de construcción</p>
+            </div>
+
+            <div class="grid_row">
+
+                <div class="grid_col">
+                    <div class="grid_contentwrapper">
+                        <img src="../recursos/imagenes/navbar-desktop/_Tierras-nuestras__re-int.jpg" alt="Revestimiento interior baño">
+                        <div class="grid_content">
+                            <h4>Second heading</h4>
+                            <h3>First Heading</h3>
+                            <a href="#">Visit Collection</a>
                         </div>
-
-                        <div class="social-media">
-                            <p>conect with us:</p>
-                            <div class="social-icons">
-                                <a href="">
-                                    <i class="ri-instagram-line"></i>
-                                </a>
-                                <a href="">
-                                    <i class="ri-youtube-line"></i>
-                                </a>
+                    </div>
+                </div>
+        
+                <div class="grid_col colRight">
+        
+                    <div class="grid_col colTop">
+                        <div class="grid_contentwrapper">
+                            <img src="../recursos/imagenes/navbar-desktop/agua-de-piedra-pileta.jpg" alt="Pileta revestida con Agua de Piedra">
+                            <div class="grid_content">
+                                <h4>Second heading</h4>
+                                <h3>First Heading</h3>
+                                <a href="#">Visit Collection</a>
                             </div>
                         </div>
                     </div>
-    
-                    <div class="contacto__form-form">
-                        <span class="circle one"></span>
-                        <span class="circle two"></span>
-
-                        <form action="../form.php" method="POST">
-                            <h3 class="form__title">Contactanos</h3>
-                            <div class="input__container">
-                                <input class="input" type="text" name="name" required>
-                                <label for="">Nombre y apellido</label>
+        
+                    <div class="grid_col colTop">
+                        <div class="grid_contentwrapper">
+                            <img src="../recursos/imagenes/navbar-desktop/Villa-la-angostura.jpeg" alt="Rotui Apart Hotel">
+                            <div class="grid_content">
+                                <h4>Second heading</h4>
+                                <h3>First Heading</h3>
+                                <a href="#">Visit Collection</a>
                             </div>
-
-                            <div class="input__container">
-                                <input class="input" type="email" name="email" required>
-                                <label for="">Email</label>
-                            </div>
-
-                            <div class="input__container">
-                                <input class="input" type="tel" name="phone" required>
-                                <label for="">Número de Teléfono</label>
-                            </div>
-
-                            <div class="input__container textarea">
-                                <textarea name="Mensaje" class="input"></textarea>
-                                <label for="">Mensaje</label>
-                            </div>
-                            <input type="submit" value="Enviar Mensaje" class="contacto-btn">
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
+
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section class="section_2" id="section_2">
+
+            <div class="info_row">
+                <!-- <div class="info_imgWrapper">
+                    <img src="../recursos/imagenes/navbar-desktop/backg-02-microsolarium.jpeg" alt="">
+                </div> -->
+
+                <div class="info_contentWrapper">
+
+                    <span class="textWrapper">
+                        <div class="line"></div>
+                        <span>Variedad de soluciones</span>
+                    </span>
+
+                    <h2>Calidad</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse blanditiis dolores inventore rem est eaque hic cupiditate! Velit iste fugiat recusandae veniam modi sint inventore perspiciatis, iure dolor neque unde aliquam laudantium cupiditate quis! Eos ab animi temporibus odio.</p>
+
+                    <a href="#">Decorate Your House</a>
+
+                </div>
+
+                <div class="info_contentWrapper">
+
+                    <span class="textWrapper">
+                        <div class="line"></div>
+                        <span>Diseño sin límites</span>
+                    </span>
+
+                    <h2>Confiabilidad</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse blanditiis dolores inventore rem est eaque hic cupiditate! Velit iste fugiat recusandae veniam modi sint inventore perspiciatis, iure dolor neque unde aliquam laudantium cupiditate quis! Eos ab animi temporibus odio.</p>
+
+                    <a href="#">Decorate Your House</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section class="section_3" id="section_3">
+
+            <div class="banner">
+                <div class="banner_container">
+                    <div class="banner_text">
+                        <h2>Soluciones <br><span>Creativas</span></h2>
+                        <p>Transformamos tus ideas en realidad con soluciones creativas en revestimientos personalizados. Nuestra experiencia en construcción nos permite ofrecer productos únicos que se adaptan a tus proyectos, asegurando calidad y estilo en cada detalle. ¡Dale vida a tus espacios con nuestro toque innovador!</p>
+                        <div class="banner_btn">
+                            <a href="#">Nuestras obras</a>
+                            <a href="../pages/contact.html">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section class="section_2" id="section_4">
+
+            <div class="info_row">
+                <div class="info_imgWrapper">
+                    <img src="../recursos/imagenes/navbar-desktop/backg-02-microsolarium.jpeg" alt="">
+                </div>
+
+                <div class="info_contentWrapper">
+
+                    <span class="textWrapper">
+                        <div class="line"></div>
+                        <span>Obras a medida</span>
+                    </span>
+
+                    <h2>Tu obra 100% personalizada</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse blanditiis dolores inventore rem est eaque hic cupiditate! Velit iste fugiat recusandae veniam modi sint inventore perspiciatis, iure dolor neque unde aliquam laudantium cupiditate quis! Eos ab animi temporibus odio.</p>
+
+                    <a href="../pages/contact.html">Hace tu consulta!</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section class="section_5">
+
+            <h3>
+                Ya conoces <span>el diseño y versatilidad <br></span> de nuestros revestimientos, creamos <br> obras <span>100% personalizadas, de calidad y confiabilidad.</span> Ahora manos a la obra y transformá cada espacio de tu obra en una expresión única con nuestras <span>soluciones creativas.</span> Elegí la calidad y creatividad que <br> tus proyectos merecen.</h3>
+
         </section>
 
     </main>
@@ -347,9 +446,6 @@
 
     <!--=============== Bootstrap ===============-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-    <!--======JmtpJs - Envio de Mail ==========-->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="../js/main.js" defer></script>

@@ -90,6 +90,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    pointer-events: none;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -590,12 +591,13 @@ header {
                     position: absolute;
                     left: 0;
                     width: 200px;
-                    background-color: #fff;
+                    background-color: #252424;
                     padding: 0rem;
                     margin: 0rem;
                     display: flex;
                     flex-direction: column;
                     display: none;
+                    border-radius: 5px;
 
                     @include nav__mobile-devices {
                         position: relative;

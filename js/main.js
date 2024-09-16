@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle = document.getElementById('nav-toggle'),
         navClose = document.getElementById('nav-close');
 
-
 /* Mostrar menu */
 if (navToggle) {
     navToggle.addEventListener('click', () => {
@@ -174,18 +173,18 @@ sr.reveal(`.projects__card`, {interval: 100});
 document.addEventListener('DOMContentLoaded', () => {
     // Selecciona todos los elementos dropdown en la navegación
     const dropdownLinks = document.querySelectorAll('.dropdown');
-  
+
     dropdownLinks.forEach((dropdown) => {
         const link = dropdown.querySelector('.app__nav__link');
         const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-  
+
         // Añade un listener para abrir el menú al pasar el ratón por encima
         link.addEventListener('mouseenter', () => {
             if (dropdownMenu) {
                 dropdownMenu.style.display = 'block';
             }
         });
-  
+
         // Añade un listener para cerrar el menú cuando se sale con el ratón
         dropdown.addEventListener('mouseleave', () => {
             if (dropdownMenu) {
@@ -221,6 +220,36 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+});
+
+/*=============== ENVIO DE MAILS ===============*/
+const form = document.querySelector("form");
+
+function sendEmail() {
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "tierrasnuestras@gmail.com",
+        Password : "B03F59EB1D13BBBE67E867A9DE040B109A0F",
+        To : 'tierrasnuestras@gmail.com',
+        From : "tierrasnuestras@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+};
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    sendEmail();
+});
+
+/*=============== EVITAR EL CLICK DERECHO DEL MOUSE PARA IMG ===============*/
+document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
 });
 
 
