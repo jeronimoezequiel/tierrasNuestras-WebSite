@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
     $message = $_POST['Mensaje'];
 
-    $to = 'tierrasnuestras@gmail.com';
+    $to = 'auralqit@gmail.com';
     $subject = 'Nuevo mensaje de contacto';
     $body = "Nombre: $name\nEmail: $email\nTeléfono: $phone\nMensaje: $message";
 
