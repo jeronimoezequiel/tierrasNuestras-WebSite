@@ -175,7 +175,7 @@
                         <span class="circle one"></span>
                         <span class="circle two"></span>
 
-                        <form action="form.php" method="POST">
+                        <!-- <form action="../form.php" method="POST">
                             <h3 class="form__title">Contactanos</h3>
                             <div class="input__container">
                                 <input class="input" type="text" name="name" required>
@@ -197,6 +197,15 @@
                                 <label for="">Mensaje</label>
                             </div>
                             <input type="submit" value="Enviar Mensaje" class="contacto-btn">
+                        </form> -->
+                    
+                        <form name="contact" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact">
+                            <input type="text" name="name" placeholder="Nombre" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="tel" name="phone" placeholder="Teléfono">
+                            <textarea name="message" placeholder="Mensaje" required></textarea>
+                            <button type="submit">Enviar</button>
                         </form>
                     </div>
                 </div>
