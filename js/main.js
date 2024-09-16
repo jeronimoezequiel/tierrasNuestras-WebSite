@@ -222,28 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/*=============== ENVIO DE MAILS ===============*/
-const form = document.querySelector("form");
-
-function sendEmail() {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "tierrasnuestras@gmail.com",
-        Password : "B03F59EB1D13BBBE67E867A9DE040B109A0F",
-        To : 'tierrasnuestras@gmail.com',
-        From : "tierrasnuestras@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-        message => alert(message)
-    );
-};
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    sendEmail();
-});
 
 /*=============== EVITAR EL CLICK DERECHO DEL MOUSE PARA IMG ===============*/
 document.addEventListener('contextmenu', function(e) {
