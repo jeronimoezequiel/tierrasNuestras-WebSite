@@ -20,6 +20,55 @@ if (navClose) {
     }
 });
 
+/*===== CERRAR MENU =======*/
+document.addEventListener('DOMContentLoaded', () => {
+    // Función para manejar el clic en los elementos <li> del menú
+    document.querySelectorAll('.navbar > ul > li').forEach((li) => {
+        li.addEventListener('click', function (event) {
+            // Detecta el submenú dentro del <li> clicado
+            let submenu = this.querySelector('ul');
+
+            if (submenu) {
+                // Alterna la visibilidad del submenú
+                if (submenu.style.display === 'block') {
+                    submenu.style.display = 'none';
+                } else {
+                    submenu.style.display = 'block';
+                }
+                // Prevenir la propagación del clic para evitar que se cierren otros menús
+                event.stopPropagation();
+            }
+        });
+    });
+
+    // Función para manejar el clic fuera del menú
+    document.addEventListener('click', function (event) {
+        // Cierra todos los submenús si se hace clic fuera del menú
+        document.querySelectorAll('.navbar ul ul').forEach((submenu) => {
+            submenu.style.display = 'none';
+        });
+    });
+
+    // Manejar el submenú dentro de "Auxiliares"
+    document.querySelectorAll('.navbar ul ul > li').forEach((li) => {
+        li.addEventListener('click', function (event) {
+            // Prevenir la propagación del clic para que el menú no se cierre
+            event.stopPropagation();
+
+            // Alternar el submenú dentro del elemento "Auxiliares"
+            let nestedSubmenu = this.querySelector('ul');
+            if (nestedSubmenu) {
+                if (nestedSubmenu.style.display === 'block') {
+                    nestedSubmenu.style.display = 'none';
+                } else {
+                    nestedSubmenu.style.display = 'block';
+                }
+            }
+        });
+    });
+});
+
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.app__nav__link')
 const linkAction = () => {
@@ -125,18 +174,18 @@ sr.reveal(`.projects__card`, {interval: 100});
 document.addEventListener('DOMContentLoaded', () => {
     // Selecciona todos los elementos dropdown en la navegación
     const dropdownLinks = document.querySelectorAll('.dropdown');
-
-    dropdownLinks.forEach(dropdown => {
+  
+    dropdownLinks.forEach((dropdown) => {
         const link = dropdown.querySelector('.app__nav__link');
         const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-
+  
         // Añade un listener para abrir el menú al pasar el ratón por encima
         link.addEventListener('mouseenter', () => {
             if (dropdownMenu) {
                 dropdownMenu.style.display = 'block';
             }
         });
-
+  
         // Añade un listener para cerrar el menú cuando se sale con el ratón
         dropdown.addEventListener('mouseleave', () => {
             if (dropdownMenu) {
@@ -145,13 +194,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Cierra el menú si se hace clic fuera de él
+    // Manejo del sub-dropdown-menu
+    const subDropdowns = document.querySelectorAll('.sub-dropdown-menu');
+    const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+
+    subDropdowns.forEach((subDropdown) => {
+        const parentDropdown = subDropdown.closest('.dropdown');
+
+        parentDropdown.addEventListener('mouseenter', () => {
+            subDropdown.classList.add('sub-dropdown-menu-show');
+        });
+
+        parentDropdown.addEventListener('mouseleave', () => {
+            subDropdown.classList.remove('sub-dropdown-menu-show');
+        });
+    });
+
+    // Cierra todos los menús si se hace clic fuera de ellos
     document.addEventListener('click', (event) => {
-        if (!event.target.closest('.dropdown')) {
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (!event.target.closest('.dropdown') && !event.target.closest('.sub-dropdown-menu')) {
+            dropdownMenus.forEach((menu) => {
                 menu.style.display = 'none';
+            });
+            subDropdowns.forEach((submenu) => {
+                submenu.classList.remove('sub-dropdown-menu-show');
             });
         }
     });
 });
+
+
+
+
 

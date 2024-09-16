@@ -27,69 +27,98 @@
 </head>
 <body>
     <!--==================== HEADER ====================-->
-    <header class="app__header header-todos-los-productos" id="app-header">
-        <nav class="app__nav app__container">
-            <a href="../index.html" class="app__nav__logo">
-                <img src="../recursos/img/logo-nuevo-sin-fondo.png" alt="">
-                <!-- <i class="ri-building-2-line"></i> -->
-                <!-- <span>TierrasNuestras</span> -->
-            </a>
-    
-            <div class="app__nav__menu active-link" id="nav-menu">
-                <ul class="app__nav__list">
-                    <li>
-                        <a href="../index.html" class="app__nav__link">Home</a>
-                    </li>
-    
-                    <li class="dropdown">
-                        <a href="../pages/02-todosLosProductos.html" class="app__nav__link">
-                            Productos <i class="bi bi-caret-down-fill"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <p>Categorías</p>
-                            <li><a href="../02b-aguaDePiedra.html">Agua de Piedra</a></li>
-                            <li><a href="../02c-microsolarium.html">Microsolarium</a></li>
-                            <li><a href="../02d-microcemento.html">Microcemento</a></li>
-                            <li><a href="../02e-base.html">Base Niveladora</a></li>
-                        </ul>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/03-dondeComprar.html" class="app__nav__link">Donde Comprar</a>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/04-quienesSomos.html" class="app__nav__link">Quienes Somos</a>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/05-FAQs.html" class="app__nav__link">FAQ'S</a>
-                    </li>
-    
-                    <!-- Ajuste aquí -->
-                    <li class="dropdown">
-                        <a href="../pages/06-contact.html" class="app__nav__link">
-                            <span id="dropdown__menu">Contactanos</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <p>Hacenos tu consulta</p>
-                            <li><a href="../pages/contact.html">Email</a></li>
-                            <li><a href="#">Otros Canales</a></li>
-                        </ul>
-                    </li>
-                </ul>
-    
-                <!-- Close button  -->
-                <div class="app__nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-            </div>
-    
-            <!-- Toggle menu -->
-            <div class="app__nav__toggle" id="nav-toggle">
-                <i class="ri-apps-line"></i>
-            </div>
+    <header class="app__header" id="app-header">
+
+        <a href="../index.html" class="logo">
+            <img src="../recursos/img/logo-nuevo-sin-fondo.png" alt="">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="ri-apps-line"></i></label>
+
+        <nav class="navbar app__nav app__container">
+            
+            <ul>
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../pages/02-todosLosProductos.html">Productos <i class="ri-arrow-down-s-line"></i></a>
+
+                    <ul>
+                        <li>
+                            <a class="dropdown_li" href="">Agua de Piedra</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Microsolarium</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Microcemento</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Pisos Calcareos</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Terrazos</a>
+                        </li>
+
+                        <li>
+                            <a href="">Auxiliares <i class="ri-arrow-right-s-line"></i></a>
+
+                            <ul>
+
+                                <li>
+                                    <a href="">Base Niveladora</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">Base Hidrofuga</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">Discos Diamantados</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Malla de Fibra de Vidrio 90gr/100gr</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../pages/03-dondeComprar.html">¿Dónde comprar?</a>
+                </li>
+
+                <li>
+                    <a href="../pages/04-quienesSomos.html">Quienes Somos</a>
+                </li>
+
+                <li>
+                    <a href="../pages/05-FAQs.html">Faq's</a>
+                </li>
+
+                <li>
+                    <a href="../pages/06-contact.html" id="dropdown__menu">Contactanos <i class="ri-arrow-down-s-line"></i></a>
+                    
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Otros Canales</a></li>
+                    </ul>
+                </li>
+
+            </ul>
         </nav>
+
     </header>
 
     <!--==================== MAIN ====================-->
@@ -101,7 +130,7 @@
                 <span>NUESTROS PRODUCTOS//</span>
                 <h1>Encontrá <font>Todos Los Productos</font> para tu hogar o empresa.</h1>
                 <p>Con más de 10 años de trayectoría, nos dedicamos a fabricar y comercializar los mejores productos para revestir interiores, exteriores y piscinas. Encontrá el tuyo o lo hacemos a tu medida.</p>
-                <a href="#">Inspirate con Tierras Nuestras</a>
+                <a href="../index.html#projects">Inspirate con Tierras Nuestras</a>
             </div>
 
             <div class="main__img">
@@ -110,14 +139,14 @@
 
         </section>
 
-        <section class="product__grid-3">
+        <section class="product__grid-3" id="aguadepiedra">
 
             <div class="product__grid-box product__grid-box1">
                 <img src="../recursos/img/agua-de-piedra-producto-1.png" alt="">
                 <div class="product__grid-text">
                     <strong>Agua de Piedra Infinity</strong>
                     <span>Rev. Continuo</span>
-                    <a href="../pages/02b-aguaDePiedra.html">Ver más</a>
+                    <!-- <a href="../pages/02b-aguaDePiedra.html">Ver más</a> -->
                 </div>
             </div>
 
@@ -126,7 +155,7 @@
                 <div class="product__grid-text">
                     <strong>Microsolarium</strong>
                     <span>Rev. atérmico antideslizante</span>
-                    <a href="../pages/02c-microsolarium.html">Ver más</a>
+                    <!-- <a href="../pages/02c-microsolarium.html">Ver más</a> -->
                 </div>
             </div>
 
@@ -135,7 +164,7 @@
                 <div class="product__grid-text">
                     <strong>Microcemento</strong>
                     <span>Rev. decorativo</span>
-                    <a href="../pages/02d-microcemento.html">Ver más</a>
+                    <!-- <a href="../pages/02d-microcemento.html">Ver más</a> -->
                 </div>
             </div>
             
@@ -366,20 +395,6 @@
                     </div>
                 </div>
 
-                <div class="new__product-box agua">
-                    <a href="#" class="new__product-img">
-                        <img src="../recursos/img/agua-de-piedra-producto-8-verde-de-mar.png" alt="">
-                        <span>Agua de Piedra</span>
-                    </a>
-
-                    <div class="new__product-text">
-                        <a href="#" class="new__product-title">
-                            Verde de Mar
-                        </a>
-                        <span>Revestimiento continuo</span>
-                    </div>
-                </div>
-
                 <div class="new__product-box microcemento">
                     <a href="#" class="new__product-img">
                         <img src="../recursos/img/microcemento-rustico-producto-8-gris-cemento.png" alt="">
@@ -415,7 +430,7 @@
         <section class="product__grid-half">
 
             <div class="product__grid-box product__grid-box1">
-                <img src="../recursos/img/piso-calcareo-1.png" alt="">
+                <img src="../recursos/microcemento-lucido-1.JPG" alt="">
                 <div class="product__grid-text">
                     <strong>Microcemento Lúcido</strong>
                     <span>Piscinas</span>
@@ -426,7 +441,7 @@
             <div class="product__grid-box product__grid-box2">
                 <img src="../recursos/img/piso-solido-casino-1.jpeg" alt="">
                 <div class="product__grid-text">
-                    <strong>Pisos Sólidos</strong>
+                    <strong>Terrazos Fundidos in situ</strong>
                     <span>Casino de Viedma</span>
                     <!-- <a href="#">Ver más</a> -->
                 </div>
@@ -435,8 +450,8 @@
             <div class="product__grid-box product__grid-box3">
                 <img src="../recursos/img/mesada-solida-3.jpeg" alt="">
                 <div class="product__grid-text">
-                    <strong>Mesadas a medida</strong>
-                    <span>Mesadas sólidas</span>
+                    <strong>Trabajos Especiales</strong>
+                    <span>Mesadas de terrazo a medida</span>
                     <!-- <a href="#">Ver más</a> -->
                 </div>
             </div>
@@ -458,117 +473,65 @@
 
                 <div class="popular__box">
                     <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
+                        <img src="../recursos/img/agua-de-piedra-producto-2-azul-del-oceano.png" alt="">
                     </a>
 
                     <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
+                        <a href="#">Agua de Piedra</a>
+                        <span class="p-category">Interior de piscinas</span>
+                        <span class="p-price">Azul del oceano</span>
                     </div>
                     
                 </div>
 
                 <div class="popular__box">
                     <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
+                        <img src="../recursos/img/agua-de-piedra-producto-7-blanco-del-cielo.png" alt="">
                     </a>
 
                     <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
+                        <a href="#">Agua de Piedra</a>
+                        <span class="p-category">Interior de piscinas</span>
+                        <span class="p-price">Blanco del Cielo</span>
                     </div>
                     
                 </div>
 
                 <div class="popular__box">
                     <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
+                        <img src="../recursos/img/agua-de-piedra-producto-5-natural-de-playa.png" alt="">
                     </a>
 
                     <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
+                        <a href="#">Agua de Piedra</a>
+                        <span class="p-category">Interior de piscinas</span>
+                        <span class="p-price">Natural de Playa</span>
                     </div>
                     
                 </div>
 
                 <div class="popular__box">
                     <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
+                        <img src="../recursos/img/microsolarium-producto-2-blanco.png" alt="">
                     </a>
 
                     <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
+                        <a href="#">Microsolarium</a>
+                        <span class="p-category">Terrazas, patios y solarium</span>
+                        <span class="p-price">Blanco</span>
                     </div>
                     
                 </div>
 
                 <div class="popular__box">
                     <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
+                        <img src="../recursos/img/microsolarium-producto-1-arena.png" alt="">
                     </a>
 
                     <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
-                    </div>
-                    
-                </div>
-
-                <div class="popular__box">
-                    <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
-                    </a>
-
-                    <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
-                    </div>
-                    
-                </div>
-
-                <div class="popular__box">
-                    <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
-                    </a>
-
-                    <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
-                    </div>
-                    
-                </div>
-
-                <div class="popular__box">
-                    <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
-                    </a>
-
-                    <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
-                    </div>
-                    
-                </div>
-
-                <div class="popular__box">
-                    <a href="#" class="popular__box-img">
-                        <img src="../recursos/img/microsolarium-producto-1.png" alt="">
-                    </a>
-
-                    <div class="popular__box-text">
-                        <a href="#">Microsolarium Color Arena</a>
-                        <span class="p-category">Terrazas, patios, solarium</span>
-                        <span class="p-price">$10 <del>$15</del></span>
+                        <a href="#">Microsolarium</a>
+                        <span class="p-category">Terrazas, patios y solarium</span>
+                        <span class="p-price">Arena</span>
                     </div>
                     
                 </div>
@@ -593,7 +556,7 @@
 
                 <addres class="footer__email">
                     Mitre 2444, Villa Maipú. Gral San Martín <br>
-                    Lun a Vier. - 9.15 AM a 15.30 PM
+                    Lun a Vier. - 8.00 AM a 15.30 PM
                 </addres>
             </div>
 
@@ -636,7 +599,7 @@
 
                     <div class="footer__social">
 
-                        <a href="https://wa.me/+5491160220888" target="_blank" class="footer__social-link">
+                        <a href="https://wa.me/+5491133443987" target="_blank" class="footer__social-link">
                             <i class="ri-whatsapp-line"></i>
                         </a>
 
@@ -644,7 +607,7 @@
                             <i class="ri-instagram-line"></i>
                         </a>
 
-                        <a class="footer__social-link" href="mailto:obras.tierrasnuestras@gmail.com" target="_blank">
+                        <a class="footer__social-link" href="mailto:tierrasnuestras@gmail.com" target="_blank">
                             <i class="ri-mail-line"></i>
                         </a>
 
@@ -675,7 +638,7 @@
     
         <ul class="fab-options">
             <li>
-                <a href="https://wa.me/+5491160220888" target="_blank">
+                <a href="https://wa.me/+5491133443987" target="_blank">
                     <span class="fab-label">Whatsapp</span>
                     <div class="fab-icon-holder">
                         <i class="ri-whatsapp-line"></i>
@@ -693,7 +656,7 @@
             </li>
 
             <li>
-                <a href="mailto:obras.tierrasnuestras@gmail.com" target="_blank">
+                <a href="mailto:tierrasnuestras@gmail.com" target="_blank">
                     <span class="fab-label">Email</span>
                     <div class="fab-icon-holder">
                         <i class="ri-mail-line"></i>

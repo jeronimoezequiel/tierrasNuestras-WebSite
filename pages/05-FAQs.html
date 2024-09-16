@@ -31,68 +31,97 @@
 <body>
     <!--==================== HEADER ====================-->
     <header class="app__header" id="app-header">
-        <nav class="app__nav app__container">
-            <a href="../index.html" class="app__nav__logo">
-                <img src="../recursos/img/logo-nuevo-sin-fondo.png" alt="">
-                <!-- <i class="ri-building-2-line"></i> -->
-                <!-- <span>TierrasNuestras</span> -->
-            </a>
-    
-            <div class="app__nav__menu active-link" id="nav-menu">
-                <ul class="app__nav__list">
-                    <li>
-                        <a href="../index.html" class="app__nav__link">Home</a>
-                    </li>
-    
-                    <li class="dropdown">
-                        <a href="../pages/02-todosLosProductos.html" class="app__nav__link">
-                            Productos <i class="bi bi-caret-down-fill"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <p>Categorías</p>
-                            <li><a href="../02b-aguaDePiedra.html">Agua de Piedra</a></li>
-                            <li><a href="../02c-microsolarium.html">Microsolarium</a></li>
-                            <li><a href="../02d-microcemento.html">Microcemento</a></li>
-                            <li><a href="../02e-base.html">Base Niveladora</a></li>
-                        </ul>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/03-dondeComprar.html" class="app__nav__link">Donde Comprar</a>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/04-quienesSomos.html" class="app__nav__link">Quienes Somos</a>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/05-FAQs.html" class="app__nav__link">FAQ'S</a>
-                    </li>
-    
-                    <!-- Ajuste aquí -->
-                    <li class="dropdown">
-                        <a href="../pages/06-contact.html" class="app__nav__link">
-                            <span id="dropdown__menu">Contactanos</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <p>Hacenos tu consulta</p>
-                            <li><a href="../pages/contact.html">Email</a></li>
-                            <li><a href="#">Otros Canales</a></li>
-                        </ul>
-                    </li>
-                </ul>
-    
-                <!-- Close button  -->
-                <div class="app__nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-            </div>
-    
-            <!-- Toggle menu -->
-            <div class="app__nav__toggle" id="nav-toggle">
-                <i class="ri-apps-line"></i>
-            </div>
+
+        <a href="../index.html" class="logo">
+            <img src="../recursos/img/logo-nuevo-sin-fondo.png" alt="">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="ri-apps-line"></i></label>
+
+        <nav class="navbar app__nav app__container">
+            
+            <ul>
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../pages/02-todosLosProductos.html">Productos <i class="ri-arrow-down-s-line"></i></a>
+
+                    <ul>
+                        <li>
+                            <a class="dropdown_li" href="">Agua de Piedra</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Microsolarium</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Microcemento</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Pisos Calcareos</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Terrazos</a>
+                        </li>
+
+                        <li>
+                            <a href="">Auxiliares <i class="ri-arrow-right-s-line"></i></a>
+
+                            <ul>
+
+                                <li>
+                                    <a href="">Base Niveladora</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">Base Hidrofuga</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">Discos Diamantados</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Malla de Fibra de Vidrio 90gr/100gr</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../pages/03-dondeComprar.html">¿Dónde comprar?</a>
+                </li>
+
+                <li>
+                    <a href="../pages/04-quienesSomos.html">Quienes Somos</a>
+                </li>
+
+                <li>
+                    <a href="../pages/05-FAQs.html">Faq's</a>
+                </li>
+
+                <li>
+                    <a href="../pages/06-contact.html" id="dropdown__menu">Contactanos <i class="ri-arrow-down-s-line"></i></a>
+                    
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Otros Canales</a></li>
+                    </ul>
+                </li>
+
+            </ul>
         </nav>
+
     </header>
 
     <!--==================== MAIN ====================-->
@@ -138,7 +167,8 @@
                     <img src="../recursos/imagenes/navbar-desktop/icon-minus.svg" alt="" class="cross hidden"/>
                 </div>
                 <p class="para hidden">
-                    No necesita mantenimiento. Llegado el caso, se puede aplicar una mano de pastina si la superficie se pone áspera.
+                    MANTENIMIENTO
+                    El Agua de Piedra no requiere mantenimiento. En caso de ser necesaria una limpieza profunda después de la temporada invernal, se puede lavar la superficie con cloro o bien lijar la superficie con lijas al agua #180, esto si hay evidencias de sarro sobre el revestimiento por efecto de aguas dura. Para mejor duración la pileta debe estar limpia todo el año y utilizar cloro liquido en el skimmer o  pastilla en la boya.
                 </p>
     
                 <hr />
@@ -160,7 +190,7 @@
                     <img src="../recursos/imagenes/navbar-desktop/icon-minus.svg" alt="" class="cross hidden"/>
                 </div>
                 <p class="para hidden">
-                    En caso de necesitar impermeabilizar su pileta, se puede aplicar algún hidrófugo. Recomendamos de la marca Sika.
+                    En caso de necesitar impermeabilizar su pileta, se puede aplicar algún hidrófugo. Recomendamos la base hidrofuga de Tierras Nuestras.
                 </p>
     
                 <hr />
@@ -261,7 +291,7 @@
                 </div>
                 
                 <p class="para hidden">
-                    Puede colocarse sobre cerámicos, antes realizando un proceso de nivelación. Este proceso consiste en aplicar base niveladora y malla, son auxiliares que no están que no están en el kit.
+                    Puede colocarse sobre cerámicos, antes realizando un proceso de nivelación. Este proceso consiste en aplicar base niveladora y malla, son auxiliares que no están en el kit.
                 </p>
                 
                 <hr />
@@ -299,7 +329,7 @@
                 </div>
                 
                 <p class="para hidden">
-                    El producto tiene garantía escrita de 3 años pero esta comprobado que su vida útil es de 10 años aproximadamente. 
+                    El producto tiene garantía escrita de 2 años, con servicio de aplicación por tierras nuestras. Esta comprobado que su vida útil es de 10 años aproximadamente. 
                 </p>
                 
                 <hr />
@@ -347,7 +377,7 @@
 
                 <addres class="footer__email">
                     Mitre 2444, Villa Maipú. Gral San Martín <br>
-                    Lun a Vier. - 9.15 AM a 15.30 PM
+                    Lun a Vier. - 8.00 AM a 15.30 PM
                 </addres>
             </div>
 
@@ -390,7 +420,7 @@
 
                     <div class="footer__social">
 
-                        <a href="https://wa.me/+5491160220888" target="_blank" class="footer__social-link">
+                        <a href="https://wa.me/+5491133443987" target="_blank" class="footer__social-link">
                             <i class="ri-whatsapp-line"></i>
                         </a>
 
@@ -398,7 +428,7 @@
                             <i class="ri-instagram-line"></i>
                         </a>
 
-                        <a class="footer__social-link" href="mailto:obras.tierrasnuestras@gmail.com" target="_blank">
+                        <a class="footer__social-link" href="mailto:tierrasnuestras@gmail.com" target="_blank">
                             <i class="ri-mail-line"></i>
                         </a>
 
@@ -429,7 +459,7 @@
     
         <ul class="fab-options">
             <li>
-                <a href="https://wa.me/+5491160220888" target="_blank">
+                <a href="https://wa.me/+5491133443987" target="_blank">
                     <span class="fab-label">Whatsapp</span>
                     <div class="fab-icon-holder">
                         <i class="ri-whatsapp-line"></i>
@@ -447,7 +477,7 @@
             </li>
 
             <li>
-                <a href="mailto:obras.tierrasnuestras@gmail.com" target="_blank">
+                <a href="mailto:tierrasnuestras@gmail.com" target="_blank">
                     <span class="fab-label">Email</span>
                     <div class="fab-icon-holder">
                         <i class="ri-mail-line"></i>

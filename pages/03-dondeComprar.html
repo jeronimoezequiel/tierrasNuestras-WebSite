@@ -31,68 +31,97 @@
 <body>
     <!--==================== HEADER ====================-->
     <header class="app__header" id="app-header">
-        <nav class="app__nav app__container">
-            <a href="../index.html" class="app__nav__logo">
-                <img src="../recursos/img/logo-nuevo-sin-fondo.png" alt="">
-                <!-- <i class="ri-building-2-line"></i> -->
-                <!-- <span>TierrasNuestras</span> -->
-            </a>
-    
-            <div class="app__nav__menu active-link" id="nav-menu">
-                <ul class="app__nav__list">
-                    <li>
-                        <a href="../index.html" class="app__nav__link">Home</a>
-                    </li>
-    
-                    <li class="dropdown">
-                        <a href="../pages/02-todosLosProductos.html" class="app__nav__link">
-                            Productos <i class="bi bi-caret-down-fill"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <p>Categorías</p>
-                            <li><a href="../02b-aguaDePiedra.html">Agua de Piedra</a></li>
-                            <li><a href="../02c-microsolarium.html">Microsolarium</a></li>
-                            <li><a href="../02d-microcemento.html">Microcemento</a></li>
-                            <li><a href="../02e-base.html">Base Niveladora</a></li>
-                        </ul>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/03-dondeComprar.html" class="app__nav__link">Donde Comprar</a>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/04-quienesSomos.html" class="app__nav__link">Quienes Somos</a>
-                    </li>
-    
-                    <li>
-                        <a href="../pages/05-FAQs.html" class="app__nav__link">FAQ'S</a>
-                    </li>
-    
-                    <!-- Ajuste aquí -->
-                    <li class="dropdown">
-                        <a href="../pages/06-contact.html" class="app__nav__link">
-                            <span id="dropdown__menu">Contactanos</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <p>Hacenos tu consulta</p>
-                            <li><a href="../pages/contact.html">Email</a></li>
-                            <li><a href="#">Otros Canales</a></li>
-                        </ul>
-                    </li>
-                </ul>
-    
-                <!-- Close button  -->
-                <div class="app__nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-            </div>
-    
-            <!-- Toggle menu -->
-            <div class="app__nav__toggle" id="nav-toggle">
-                <i class="ri-apps-line"></i>
-            </div>
+
+        <a href="../index.html" class="logo">
+            <img src="../recursos/img/logo-nuevo-sin-fondo.png" alt="">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="ri-apps-line"></i></label>
+
+        <nav class="navbar app__nav app__container">
+            
+            <ul>
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../pages/02-todosLosProductos.html">Productos <i class="ri-arrow-down-s-line"></i></a>
+
+                    <ul>
+                        <li>
+                            <a class="dropdown_li" href="">Agua de Piedra</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Microsolarium</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Microcemento</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Pisos Calcareos</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown_li" href="">Terrazos</a>
+                        </li>
+
+                        <li>
+                            <a href="">Auxiliares <i class="ri-arrow-right-s-line"></i></a>
+
+                            <ul>
+
+                                <li>
+                                    <a href="">Base Niveladora</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">Base Hidrofuga</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">Discos Diamantados</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Malla de Fibra de Vidrio 90gr/100gr</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../pages/03-dondeComprar.html">¿Dónde comprar?</a>
+                </li>
+
+                <li>
+                    <a href="../pages/04-quienesSomos.html">Quienes Somos</a>
+                </li>
+
+                <li>
+                    <a href="../pages/05-FAQs.html">Faq's</a>
+                </li>
+
+                <li>
+                    <a href="../pages/06-contact.html" id="dropdown__menu">Contactanos <i class="ri-arrow-down-s-line"></i></a>
+                    
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Otros Canales</a></li>
+                    </ul>
+                </li>
+
+            </ul>
         </nav>
+
     </header>
 
     <!--==================== MAIN ====================-->
@@ -109,7 +138,7 @@
             </div>
 
             <div class="main__img">
-                <img src="../recursos/about-img-1.jpg" alt="">
+                <img src="../recursos/contact-img-2.jpg" alt="">
             </div>
 
         </section>
@@ -127,8 +156,8 @@
                     <h1>Tierras Nuestras Srl.</h1>
                     <ul>
                         <li><span>Dirección:</span> Mitre 2444, Villa Maipu, Gral San Martín, Buenos Aires.</li>
-                        <li><span>Teléfono:</span> +54 9 11 6022 -0888</li>
-                        <li><span>Horario de atención:</span> Lun a Vier. - 9.15 AM  a 15.30 PM</li>
+                        <li><span>Teléfono:</span> +5491133443987</li>
+                        <li><span>Horario de atención:</span> Lun a Vier. - 8.00 AM  a 15.30 PM</li>
                         <li><a href="../pages/contact.html" class="hero-btn">Contactanos</a></li>
                     </ul>
                 </div>
@@ -148,8 +177,8 @@
                     <h2 class="titulo">Encontra el revestimiento perfecto!</h2>    
                     <p>Explorá nuestra selección de productos y descubrí el producto perfecto para tu hogar o espacio comercial.</p>
         
-                    <a href="" class="hero-btn">Visita nuestras obras</a>
-                    <a href="" class="hero-btn contact-btn">Inspirate con Tierras Nuestras</a>
+                    <!-- <a href="" class="hero-btn">Visita nuestras obras</a> -->
+                    <!-- <a href="" class="hero-btn contact-btn">Inspirate con Tierras Nuestras</a> -->
                 </div>    
             </div>
         </section>
@@ -171,7 +200,7 @@
 
                 <addres class="footer__email">
                     Mitre 2444, Villa Maipú. Gral San Martín <br>
-                    Lun a Vier. - 9.15 AM a 15.30 PM
+                    Lun a Vier. - 8.00 AM a 15.30 PM
                 </addres>
             </div>
 
@@ -214,7 +243,7 @@
 
                     <div class="footer__social">
 
-                        <a href="https://wa.me/+5491160220888" target="_blank" class="footer__social-link">
+                        <a href="https://wa.me/+5491133443987" target="_blank" class="footer__social-link">
                             <i class="ri-whatsapp-line"></i>
                         </a>
 
@@ -222,7 +251,7 @@
                             <i class="ri-instagram-line"></i>
                         </a>
 
-                        <a class="footer__social-link" href="mailto:obras.tierrasnuestras@gmail.com" target="_blank">
+                        <a class="footer__social-link" href="mailto:tierrasnuestras@gmail.com" target="_blank">
                             <i class="ri-mail-line"></i>
                         </a>
 
@@ -253,7 +282,7 @@
     
         <ul class="fab-options">
             <li>
-                <a href="https://wa.me/+5491160220888" target="_blank">
+                <a href="https://wa.me/+5491133443987" target="_blank">
                     <span class="fab-label">Whatsapp</span>
                     <div class="fab-icon-holder">
                         <i class="ri-whatsapp-line"></i>
@@ -271,7 +300,7 @@
             </li>
 
             <li>
-                <a href="mailto:obras.tierrasnuestras@gmail.com" target="_blank">
+                <a href="mailto:tierrasnuestras@gmail.com" target="_blank">
                     <span class="fab-label">Email</span>
                     <div class="fab-icon-holder">
                         <i class="ri-mail-line"></i>

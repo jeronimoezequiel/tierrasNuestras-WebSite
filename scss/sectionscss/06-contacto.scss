@@ -1,91 +1,17 @@
-// .contact-us {
-//     width: 80%;
-//     margin: 16% 10%;
-//     height: 100%;
-
-//     @include large-device {
-//         margin: 9% 10%;
-//     }
-
-//     .contact__us-info {
-
-//         @include large-device {
-//             max-width: 50%;
-//         }
-//     }
-
-//     .row {
-
-//         .contact-col {
-//             flex-basis: 100%;
-//             margin-bottom: 30px;
-
-//             @include tablet {
-//                 flex-basis: 100%;
-//             }
-
-//             @include large-device {
-//                 flex-basis: 50%; 
-//                 display: flex;
-//                 flex-direction: column;
-//             }
-
-//             form {
-//                 flex-direction: row; 
-//                 flex-wrap: wrap;
-//                 gap: 15px;
-//             }
-
-//             .red-btn {
-//                 margin: 0;
-//             }
-//         }
-
-//         .contact-col div {
-//             display: flex;
-//             align-items: center;
-//             margin-bottom: 40px;
-
-//             .bi {
-//                 font-size: 28px;
-//                 color: #f44336;
-//                 margin: 10px;
-//                 margin-right: 30px;
-//             }
-
-//             h5 {
-//                 font-size: 20px;
-//                 margin-bottom: 5px;
-//                 color: #555;
-//                 font-weight: 400;
-//             }
-
-//             p {
-//                 padding: 0;
-//             }
-//         }
-        
-//         input, textarea {
-//             width: 100%;
-//             padding: 15px;
-//             margin-bottom: 17px;
-//             outline: none;
-//             border: 1px solid #ccc;
-//             box-sizing: border-box;
-//         }
-//     }
-// }
-
 .contacto__container {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 2rem;
+    padding: 4rem;
     margin-top: 2%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include movil-s-m {
+        padding: 1.5rem;
+    }
 
     .big__circle {
         position: absolute;
@@ -96,6 +22,16 @@
         bottom: 50%;
         right: 50%;
         transform: translate(-40%, 38%);
+
+        @include movil-s-m {
+            display: none;
+        }
+
+        @include medium-device-900 {
+            bottom: 75%;
+            transform: scale(0.9) translate(-56%, 41%);
+            right: 50%;
+        }
     }
 
     .big__circle:after {
@@ -119,6 +55,11 @@
         overflow: hidden;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        height: 82vh;
+
+        @include medium-device-900 {
+            grid-template-columns: 1fr;
+        }
 
         .contacto__form-form {
             background-color:  #f44336;
@@ -152,12 +93,20 @@
                 overflow: hidden;
                 position: relative;
 
+                @include movil-s-m {
+                    padding: 1.7rem 1.6rem;
+                }
+
                 .form__title {
                     color: #fff;
                     font-weight: 500;
                     font-size: 1.5rem;
                     line-height: 1;
                     margin-bottom: .7rem;
+
+                    @include movil-s-m {
+                        font-size: 1.15rem;
+                    }
                 }
 
                 .input__container {
@@ -176,6 +125,10 @@
                         letter-spacing: .5px;
                         border-radius: 5px;
                         transition: .4s;
+
+                        @include movil-s-m {
+                            padding: .45rem 1.2rem;
+                        }
                     }
 
                     textarea {
@@ -242,6 +195,10 @@
             padding: 2.3rem 2.2rem;
             position: relative;
 
+            @include movil-s-m {
+                padding: 1.7rem 1.6rem;
+            }
+
             .contacto__title {
                 color: #0e0e0e;
             }
@@ -249,10 +206,18 @@
             .contacto__text {
                 color: #333;
                 margin: 1.5rem 0 2rem 0;
+
+                @include movil-s-m {
+                    font-size: .8rem;
+                }
+
+                @include medium-device-900 {
+                    margin: 1rem 0 1.5rem 0;
+                }
             }
 
             .contacto__info-info {
-                
+                margin-top: -4%;
 
                 .information {
                         display: flex;
@@ -260,6 +225,10 @@
                         margin: .7rem 0;
                         align-items: center;
                         font-size: .95rem;
+
+                        @include movil-s-m {
+                            font-size: .8rem;
+                        }
 
                     i {
                         font-size: 28px;
@@ -269,15 +238,27 @@
             }
 
             .social-media {
-                padding: 2rem 0 0 0;
+                padding: 0rem;
+
+                @include medium-device-900 {
+                    padding: 1.5rem 0 0 0;
+                }
 
                 p {
                     color: #333;
+
+                    @include movil-s-m {
+                        font-size: .8rem;
+                    }
                 }
 
                 .social-icons {
                     display: flex;
                     margin-top: .5rem;
+
+                    @include movil-s-m {
+                        width: 23px;
+                    }
 
                     a {
                         width: 35px;
@@ -289,6 +270,12 @@
                         line-height: 35px;
                         margin-right: .5rem;
                         transition: .3s;
+
+                        @include movil-s-m {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                        }
                     }
 
                     a:hover {
@@ -305,6 +292,26 @@
             height: 100px;
             background-color: 22px solid #f44336;
             border-radius: 50%;
+
+            @include movil-s-m {
+                display: none;
+            }
+
+            @include medium-device-900 {
+                bottom: initial;
+                top: -75px;
+                right: 65px;
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    .contacto__form::before {
+
+        @include medium-device-900 {
+            top: -13px;
+            left: initial;
+            right: 70px;
         }
     }
 }
